@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title> Mursal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Mursal Ahad</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="services.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="fun.html">Fun</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="services.html">Services</a>
+                <a href="fun.html">Fun</a>
+                <a href="contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="text">
+          Throughout my studies and personal projects, I have developed a range of technical and problem-solving skills essential for software development. I am continuously learning and applying new tools and technologies to enhance my abilities and keep up with industry standards. Below are some of the key skills I have gained so far:
+        </div>
+  
+        <div class="cells">
+          <div class="cell">
+            <img src="images/html-logo.webp" alt="html logo">
+            <span>HTML</span>
+          </div>
+          
+          <div class="cell">
+            <img src="images/css-logo.webp" alt="css logo">
+            <span>CSS</span>
+          </div>
+          
+          <div class="cell">
+            <img src="images/javascript-logo.webp" alt="javascript logo">
+            <span>JavaScript</span>
+          </div>
+          
+          <div class="cell">
+            <img src="images/node-logo.webp" alt="node logo">
+            <span>Node.js</span>
+          </div>
+          <div class="cell">
+            <img src="images/react-logo.webp" alt="react logo">
+            <span>React.js</span>
+          </div>
+        </div>
+      </section>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
+    </body>
+    </html>
